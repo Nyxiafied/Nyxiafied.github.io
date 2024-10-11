@@ -29,9 +29,11 @@
             <div class="draggable" draggable="true" ondragstart="drag(event)" id="template1">Section Title</div>
             <div class="draggable" draggable="true" ondragstart="drag(event)" id="template2">Text Block</div>
             <div class="draggable" draggable="true" ondragstart="drag(event)" id="template3">Image Block</div>
+            <div class="draggable" draggable="true" ondragstart="drag(event)" id="template4">Button</div>
             <h2>Settings</h2>
             <label for="bgColor">Background Color:</label>
             <input type="color" id="bgColor" onchange="changeBackgroundColor(this.value)">
+            <button onclick="saveChanges()">Save Changes</button>
         </div>
         
         <div class="canvas" id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
