@@ -49,6 +49,39 @@ nav ul li a:hover {
     color: #f39c12;
 }
 
+/* Editor Styles */
+.editor {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.draggable {
+    padding: 10px;
+    background: #f39c12;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.canvas {
+    flex-grow: 1;
+    background: #e9e9e9;
+    min-height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?nature,tech') no-repeat center center/cover;
