@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Modern Website</title>
+    <title>Modern Website with Editor</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -22,6 +22,23 @@
             </nav>
         </div>
     </header>
+    
+    <div class="editor">
+        <div class="sidebar">
+            <h2>Templates</h2>
+            <div class="draggable" draggable="true" ondragstart="drag(event)" id="template1">Section Title</div>
+            <div class="draggable" draggable="true" ondragstart="drag(event)" id="template2">Text Block</div>
+            <div class="draggable" draggable="true" ondragstart="drag(event)" id="template3">Image Block</div>
+            <h2>Settings</h2>
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" onchange="changeBackgroundColor(this.value)">
+        </div>
+        
+        <div class="canvas" id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Drag Items Here</h2>
+        </div>
+    </div>
+
     <section class="hero">
         <div class="container">
             <h2>Welcome to My Sleek Website</h2>
@@ -29,16 +46,20 @@
             <a href="#" class="btn">Learn More</a>
         </div>
     </section>
+    
     <section class="about">
         <div class="container">
             <h2>About Me</h2>
             <p>This is a section about the website or yourself. The design is created to be minimalist and elegant, providing a great user experience.</p>
         </div>
     </section>
+    
     <footer>
         <div class="container">
             <p>&copy; 2024 My Modern Website | All Rights Reserved</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
