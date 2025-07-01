@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Game Records</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+            color: #334155; /* Darker text */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16 flex justify-center items-center min-h-screen">
+    <div class="container mx-auto bg-white shadow-xl rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 max-w-4xl border border-gray-200">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-800">Minesweeper Game Records</h1>
+
+        <div class="overflow-x-auto rounded-lg border border-gray-300">
+            <table class="min-w-full divide-y divide-gray-300">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider rounded-tl-lg">Dimensions</th>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Score</th>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Game ID</th>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Link</th>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider rounded-tr-lg">IOE</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Beginner Section (now green) -->
+                    <tr class="bg-green-50">
+                        <td colspan="5" class="px-4 py-3 text-sm font-semibold text-green-800">Beginner</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">187x10 beg #1</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1870</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">3992344967</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/3992344967" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.8667</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">172x30 beg #5</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">5160</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">3897137419</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/3897137419" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.7222</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">167x40 beg #12</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">6680</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4031402243</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/4031402243" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.6667</td>
+                    </tr>
+                    <!-- Beginner Totals (now green) -->
+                    <tr class="bg-green-100 font-semibold">
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-green-900">Total:</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-green-900">13710</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-green-900" colspan="2"></td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-green-900">5.2556</td>
+                    </tr>
+
+                    <!-- Intermediate Section (now blue) -->
+                    <tr class="bg-blue-50">
+                        <td colspan="5" class="px-4 py-3 text-sm font-semibold text-blue-800">Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">154x25 int #1</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">3850</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4081997383</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/4081997383" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.5429</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">149x45 int #5</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">6705</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4576151487</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/4576151487" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.4932</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">145x35 int #12</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">5075</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4125750155</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/4125750155" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.4516</td>
+                    </tr>
+                    <!-- Intermediate Totals (now blue) -->
+                    <tr class="bg-blue-100 font-semibold">
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-900">Total:</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-900">15630</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-900" colspan="2"></td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-900">4.4877</td>
+                    </tr>
+
+                    <!-- Expert Section -->
+                    <tr class="bg-red-50">
+                        <td colspan="5" class="px-4 py-3 text-sm font-semibold text-red-800">Expert</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">146x35 exp #1</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">5110</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4641410941</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/4641410941" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.4559</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">131x40 exp #5</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">5240</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4027710101</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/4027710101" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.3059</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">127x50 exp #12</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">6350</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4524189848</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-blue-600 hover:underline">
+                            <a href="https://minesweeper.online/game/4524189848" target="_blank" rel="noopener noreferrer">Link</a>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">1.2710</td>
+                    </tr>
+                    <!-- Expert Totals -->
+                    <tr class="bg-red-100 font-semibold">
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-red-900">Total:</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-red-900">16700</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-red-900" colspan="2"></td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm text-red-900">4.0328</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="bg-gray-200 font-bold text-lg">
+                        <td class="px-4 py-3 whitespace-nowrap text-gray-800">Grand Total:</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-gray-800">46040</td>
+                        <td class="px-4 py-3 whitespace-nowrap text-gray-800" colspan="2"></td>
+                        <td class="px-4 py-3 whitespace-nowrap text-gray-800">13.7761</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
